@@ -1,35 +1,29 @@
-# Plugin Stargaze
+# Plugin Superfluid
 
-A plugin for fetching NFT data from the Stargaze API.
+A plugin for creating, starting, and stopping Superfluid streams
 
 ## Overview
 
-The Plugin Stargaze provides a simple interface to get NFT data from Stargaze collections. It integrates with Stargaze's GraphQL API to fetch the latest NFTs from collections.
+The Plugin Superfluid provides a simple interface to create, start, and stop Superfluid streams.
 
 ## Installation
 
 ```bash
-pnpm add @elizaos/plugin-stargaze
+pnpm add @elizaos/plugin-superfluid
 ```
 
 ## Configuration
 
-Set up your environment with the required Stargaze API endpoint, currently Stargaze offers https://graphql.mainnet.stargaze-apis.com/graphql publicly.
-
-| Variable Name | Description |
-| ------------- | ----------- |
-| `STARGAZE_ENDPOINT` | Stargaze GraphQL API endpoint |
-
 ## Usage
 
 ```typescript
-import { stargazePlugin } from "@elizaos/plugin-stargaze";
+import { superfluidPlugin } from "@elizaos/plugin-superfluid";
 
 // Initialize the plugin
-const plugin = stargazePlugin;
+const plugin = superfluidPlugin;
 
-// The plugin provides the GET_LATEST_NFT action which can be used to fetch NFTs
-// Example: "Show me the latest NFT from ammelia collection"
+// The plugin provides the CREATE_STREAM action which can be used to create streams
+// Example: "Start a stream of $USDC to 0x1234567890987654321234567890"
 ```
 
 ## License
